@@ -154,16 +154,12 @@ public class dashboardScene {
         }
 
         addProject.setOnAction(e -> {
-
-            try {
-                createProject();
-            }
+            try {createProject();}
 
             catch(IndexOutOfBoundsException exception) {
-                System.out.println("Too many projects");
-            }
+                System.out.println("Too many projects");}
 
-            System.out.println("Project created...");
+            System.out.println("Project menu created...");
         });
 
         projectsMenu.setHgap(20);
@@ -181,7 +177,6 @@ public class dashboardScene {
         chart.setLabelsVisible(false);
 
         chartPane.getChildren().add(chart);
-        //gridPane.add(chartPane, 9, 3);
 
         hbox.getChildren().addAll(tasksToday,statistics);
         hboxTop2.getChildren().addAll(date,addProject);
