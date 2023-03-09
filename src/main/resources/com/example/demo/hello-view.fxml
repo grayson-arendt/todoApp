@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HelloController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="500.0" prefWidth="400.0" spacing="20.0" style="-fx-background-color: #020202;">
+          <padding>
+              <Insets bottom="180.0" left="60.0" right="60.0" />
+          </padding>
+         <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign In">
+            <font>
+               <Font name="JetBrains Mono Bold" size="22.0" />
+            </font>
+         </Text>
+         <TextField prefHeight="46.0" prefWidth="214.0" promptText="Username" style="-fx-background-color: #A6A6A6; -fx-background-radius: 25; -fx-opacity: 0.2; -fx-prompt-text-fill: #D9D9D9;">
+            <font>
+               <Font name="JetBrains Mono Regular" size="16.0" />
+            </font>
+         </TextField>
+         <TextField prefHeight="46.0" prefWidth="214.0" promptText="Password" style="-fx-background-color: #A6A6A6; -fx-background-radius: 25; -fx-opacity: 0.2; -fx-prompt-text-fill: #D9D9D9;">
+            <font>
+               <Font name="JetBrains Mono Regular" size="16.0" />
+            </font>
+         </TextField>
+      </VBox>
+   </children>
+</Pane>

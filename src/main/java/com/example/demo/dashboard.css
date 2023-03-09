@@ -1,0 +1,163 @@
+@font-face {
+  font-family: JetBrainsMono;
+  font-style: normal;
+  font-weight: 100;
+  src: url("../fonts/ttf/JetBrainsMono-Thin.ttf") format("truetype");
+}
+@font-face {
+  font-family: JetBrainsMono;
+  font-style: normal;
+  font-weight: 200;
+  src: url("../fonts/ttf/JetBrainsMono-ExtraLight.ttf") format("truetype");
+}
+@font-face {
+  font-family: JetBrainsMono;
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/ttf/JetBrainsMono-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: JetBrainsMono;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ttf/JetBrainsMono-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: JetBrainsMono;
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/ttf/JetBrainsMono-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: JetBrainsMono;
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/ttf/JetBrainsMono-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: JetBrainsMono;
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ttf/JetBrainsMono-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: JetBrainsMono;
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/ttf/JetBrainsMono-ExtraBold.ttf") format("truetype");
+}
+
+.root {
+    -fx-background-color: #1D1D1D;
+     -fx-text-fill: white;
+     -fx-font-family: "JetBrains Mono";
+     -fx-font-size: 15px;
+     -fx-border-color: transparent;
+}
+
+#rectangle {
+    -fx-fill: #363636;
+}
+
+#welcome {
+    -fx-font-family: "JetBrains Mono Bold";
+    -fx-font-size: 20px;
+    -fx-text-fill: #814CEB;
+    -fx-padding: 30px 0 0px 0px; /* top, right, bottom, left */
+}
+
+#date {
+    -fx-font-family: "JetBrains Mono Light";
+    -fx-font-size: 15px;
+    -fx-text-fill: #9F9F9F;
+}
+
+#toolbar {
+    -fx-background-color: #323232;
+    -fx-padding: 220px 0 0px 10px; /* top, right, bottom, left */
+}
+
+#toolbarButtons {
+   -fx-background-color: #363636;
+   -fx-border-color: transparent;
+   -fx-font-size: 18px;
+   -fx-text-fill: white;
+   -fx-cursor: hand;
+}
+
+#dashboardHome {
+    -fx-background-color: transparent;
+    -fx-background-image: url("../images/home.png");
+    -fx-background-size: 25px 25px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-cursor: hand;
+}
+
+#taskList {
+    -fx-background-color: transparent;
+    -fx-background-image: url("../images/calendar.png");
+    -fx-background-size: 25px 25px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-cursor: hand;
+}
+
+#tracking {
+    -fx-background-color: transparent;
+    -fx-background-image: url("../images/clock.png");
+    -fx-background-size: 25px 25px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-cursor: hand;
+}
+
+#settings {
+    -fx-background-color: transparent;
+    -fx-background-image: url("../images/settings.png");
+    -fx-background-size: 25px 25px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-cursor: hand;
+}
+
+#addProject {
+    -fx-background-color: black;
+    -fx-background-radius: 5px;
+    -fx-font-size: 15px;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+
+.text-field {
+   -fx-padding: 0 0 5px 0;
+   -fx-prompt-text-fill: gray;
+   -fx-text-fill: gray;
+   -fx-font-family: "JetBrains Mono";
+   -fx-font-size: 12px;
+   -fx-background-color: transparent;
+   -fx-border-width: 0 0 1.5px 0;
+   -fx-border-color: gray;
+   -fx-border-style: solid;
+}
+
+#red {
+-fx-background-color: #F85646;
+
+}
+
+#yellow {
+-fx-background-color: #E2B808;
+}
+
+#green {
+-fx-background-color: #008000;
+}
+
+#blue {
+-fx-background-color: #1893F8;
+}
+
+#purple {
+-fx-background-color: #814CEB;
+}
