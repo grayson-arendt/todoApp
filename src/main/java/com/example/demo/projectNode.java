@@ -36,7 +36,7 @@ public class projectNode extends dashboardScene {
     }
 
     public Rectangle getRect(int pos) {
-        return projectsRect.get(pos);
+        return projectsRect[pos];
     }
 
     public void setProjectNameData(String projectName) {
@@ -54,10 +54,6 @@ public class projectNode extends dashboardScene {
 
     public void setColorData(String color) {
         color = this.color;
-    }
-
-    public void setColor(int pos, String color) {
-        projectsRect.get(pos).setStyle("-fx-border-width: 0 3px 0 0; -fx-border-color: " + color + ";");
     }
 
     public String getColor() {

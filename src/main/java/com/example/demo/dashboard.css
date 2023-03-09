@@ -129,8 +129,67 @@
     -fx-cursor: hand;
 }
 
+#red {
+-fx-border-radius: 15px;
+-fx-border-width: 1px;
+-fx-border-color:#F85646;
+}
+
+#red .radio:selected  {
+-fx-border-radius: 15px;
+-fx-border-width: 1px;
+-fx-border-color:#F85646;
+  -fx-background-color: -fx-mark-highlight-color, #F85646;
+  -fx-background-insets: 0 0 -1 0, 0;
+}
+
+#yellow {
+-fx-border-radius: 15px;
+-fx-border-color:#E2B808;
+}
+
+#yellow .radio:selected{
+-fx-border-radius: 15px;
+-fx-border-width: 1px;
+-fx-border-color:#F85646;
+-fx-background-color: #E2B808;
+}
+
+#green {
+-fx-border-radius: 15px;
+-fx-border-color:#008000;
+}
+
+#green .radio:selected{
+-fx-border-radius: 15px;
+-fx-border-color:#1893F8;
+-fx-background-color: #008000;
+}
+
+#blue {
+-fx-border-radius: 15px;
+-fx-border-color:#1893F8;
+}
+
+#blue .radio:selected{
+-fx-background-color: #1893F8;
+-fx-border-radius: 15px;
+-fx-border-color:#1893F8;
+}
+
+#purple {
+-fx-border-radius: 15px;
+-fx-border-color:#814CEB;
+}
+
+#purple .radio:selected{
+-fx-border-radius: 15px;
+-fx-border-color:#1893F8;
+-fx-background-color: #814CEB;
+}
+
 .text-field {
-   -fx-padding: 0 0 5px 0;
+
    -fx-prompt-text-fill: gray;
    -fx-text-fill: gray;
    -fx-font-family: "JetBrains Mono";
@@ -141,23 +200,25 @@
    -fx-border-style: solid;
 }
 
-#red {
--fx-background-color: #F85646;
-
+.text-field:hover {
+-fx-border-color: #5E17EB;
 }
 
-#yellow {
--fx-background-color: #E2B808;
+.text-field:focused {
+-fx-border-color: #5E17EB;
 }
 
-#green {
--fx-background-color: #008000;
+.label {
+    -fx-font-size: 10px;
+    -fx-text-fill: white;
+    -fx-font-family: "JetBrains Mono Bold";
 }
 
-#blue {
--fx-background-color: #1893F8;
-}
+#create {
 
-#purple {
--fx-background-color: #814CEB;
+-fx-background-color: black;
+-fx-background-radius: 10px;
+-fx-font-size: 10px;
+    -fx-text-fill: white;
+    -fx-font-family: "JetBrains Mono Bold";
 }

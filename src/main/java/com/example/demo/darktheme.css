@@ -59,6 +59,17 @@
    -fx-border-style: solid;
 }
 
+<<<<<<< HEAD
+=======
+.text-field:hover {
+-fx-border-color: #5E17EB;
+}
+
+.text-field:focused {
+-fx-border-color: #5E17EB;
+}
+
+>>>>>>> aebd292 (Initial commit)
 #registerField {
    -fx-padding: 0 0 5px 0px;
    -fx-prompt-text-fill: gray;
@@ -92,11 +103,23 @@
     -fx-font-family: "JetBrains Mono Bold";
 }
 
+<<<<<<< HEAD
+=======
+#invalidLogin {
+-fx-font-family: "JetBrains Mono Bold";
+-fx-text-fill: red;
+}
+
+>>>>>>> aebd292 (Initial commit)
 #pane {
     -fx-background-repeat: none;
     -fx-background-size: 400 500;
     -fx-background-position: center center;
+<<<<<<< HEAD
     -fx-background-image: url("../images/loginpurple2.png");
+=======
+    -fx-background-image: url("../images/loginpurple.png");
+>>>>>>> aebd292 (Initial commit)
     -fx-background-color: transparent;
 }
 
@@ -128,6 +151,7 @@
     -fx-border-color: transparent;
     -fx-cursor: hand;
 }
+<<<<<<< HEAD
 
 #close {
     -fx-padding: 25 40 0 0;
@@ -138,3 +162,5 @@
     -fx-background-color: transparent;
     -fx-cursor: hand;
 }
+=======
+>>>>>>> aebd292 (Initial commit)

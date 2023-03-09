@@ -18,12 +18,14 @@ public class projectScene extends dashboardScene {
         projectNode p = new projectNode(); // default created, will fill later
         ToggleGroup tg = new ToggleGroup();
 
-        TextField inputName = new TextField("project name");
+        TextField inputName = new TextField();
         RadioButton red = new RadioButton();
         RadioButton yellow = new RadioButton();
         RadioButton green = new RadioButton();
         RadioButton blue = new RadioButton();
         RadioButton purple = new RadioButton();
+
+        inputName.setPromptText("project name");
 
         red.setId("red");
         yellow.setId("yellow");
@@ -39,11 +41,11 @@ public class projectScene extends dashboardScene {
 
         Button create = new Button("create");
 
+        projectsMenu.add(vboxProject,p.projectCount,0); // the rectangle it's in
+
         colors.getChildren().addAll(red,yellow,green,blue,purple);
         vboxProject.getChildren().addAll(inputName,colors,create);
         vboxProject.toFront();
-
-        projectsMenu.add(vboxProject,p.projectCount,0); // the rectangle it's in
 
         create.setOnAction(e -> { // when create button pressed
             p.setProjectNameData(inputName.getText());

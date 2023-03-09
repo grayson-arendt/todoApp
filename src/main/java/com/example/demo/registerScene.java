@@ -23,7 +23,6 @@ public class registerScene {
     public boolean usernameTaken = false;
     public Label successful = new Label("Create an account");
     public Hyperlink back = new Hyperlink("Back to login");
-    public Button close2 = new Button();
     public Pane rpane = new Pane();
     public VBox rvbox = new VBox(15);
     public HBox rhbox = new HBox(50);
@@ -49,7 +48,7 @@ public class registerScene {
 
         rhbox.getChildren().addAll(spacer1, back, spacer2);
         rvbox.getChildren().addAll(successful, newUser, newPass, confirmPass, rhbox);
-        rpane.getChildren().addAll(close2, rvbox);
+        rpane.getChildren().addAll(rvbox);
 
         Scene registerscene = new Scene(rpane, 400, 500);
         registerscene.getStylesheets().add(registerScene.class.getResource("darktheme.css").toString());
@@ -99,20 +98,10 @@ public class registerScene {
             successful.setText("");
         }));
 
-        close2.setId("close");
-        close2.setPrefSize(15, 15);
-        close2.setOnAction((this::close));
 
         confirmPass.setOnAction(registerEvent);
 
-        stage.initStyle(StageStyle.TRANSPARENT);
-
         return registerscene;
-    }
-
-    public void close(ActionEvent e) {
-        Platform.exit();
-        System.exit(0);
     }
 
     public void registerLogin() throws SQLException {

@@ -20,7 +20,7 @@ public class loginScene
     public Pane pane = new Pane();
     public VBox vbox = new VBox(15);
     public HBox hbox = new HBox(50);
-    public Label signIn = new Label("");
+    public Label signIn = new Label("Sign in");
     public Label invalidLogin = new Label("");
     public Hyperlink register = new Hyperlink("Register");
     public Hyperlink forgotPass = new Hyperlink("Forgot password?");
